@@ -1,0 +1,92 @@
+/* Resetting the box-sizing for all elements */
+* {
+    box-sizing: border-box;
+  }
+  @font-face {
+        font-family: 'chicago';
+        src: url('chicago-12-1.ttf');
+    }
+  
+  /* Overall page styling for that retro, pixelated look */
+  body {
+    margin: 0;
+    padding: 20px;
+    background-color: #c0c0c0;
+    color: #000;
+    font-family: "chicago",monospace;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Header styling to emulate an early Mac OS window header */
+  header {
+    background-color: #e0e0e0;
+    padding: 15px;
+    border: 2px solid #000;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 32px;
+  }
+  
+  /* The changing-text element transitions using steps so that the opacity
+     change feels “pixelated” */
+  .changing-text {
+    margin-top: 10px;
+    font-size: 20px;
+    transition: opacity 300ms steps(5, end);
+  }
+  
+  /* Section styling to mimic window panels */
+  section {
+    background-color: #e0e0e0;
+    padding: 15px;
+    border: 2px solid #000;
+    margin-bottom: 20px;
+  }
+  
+  section h2 {
+    margin-top: 0;
+  }
+  
+  /* Styling for the embedded CV PDF */
+  #pdf-cv embed {
+    border: 2px solid #000;
+  }
+  
+  /* A 3x4 grid of projects */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .project-item {
+    background-color: #d0d0d0;
+    padding: 10px;
+    border: 2px solid #000;
+    position: relative; /* Establishes a positioning context */
+  }
+  
+  .project-item img {
+    max-width: 9rem;
+    position: absolute;
+    top: 50%;              /* Position at 50% of the container's height */
+    right: 10px;           /* Adjust horizontal offset as needed */
+    transform: translateY(-50%); /* Shift upward by 50% of the image’s height */
+  }
+  
+  
+  
+  
+  /* Footer styling */
+  footer {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border: 2px solid #000;
+    text-align: center;
+  }
+  

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Oscar Johnson | CV &amp; Projects</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Oscar Johnson</h1>
+      <p id="changing-text" class="changing-text">Software Development</p><p>__</p>       
+      <a href="">Linkedin</a><a href="https://github.com/OscarJohnsonn">Github</a>
+    </header>
+
+    <section id="pdf-cv">
+      <h2>Curriculum Vitae</h2>
+      <!-- Adjust the 'src' to the path of your PDF -->
+      <embed src="CV.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
+
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <a href="https://github.com/OscarJohnsonn">Github</a>
+      <div class="grid-container">
+        <div class="project-item">
+            <h3>Project 1</h3>
+            <img src="image.png" alt="project-item">
+            <p>description of project 1</p>
+
+        </div>
+        <div class="project-item">
+            <h3>Project 1</h3>
+            <img src="image.png" alt="project-item">
+            <p>description of project 1</p>
+
+        </div>
+        <div class="project-item">
+            <h3>Project 1</h3>
+            <img src="image.png" alt="project-item">
+            <p>description of project 1</p>
+
+        </div>
+        <div class="project-item">
+            <h3>Project 1</h3>
+            <img src="image.png" alt="project-item">
+            <p>description of project 1</p>
+
+        </div>
+        <div class="project-item">
+            <h3>Project 1</h3>
+            <img src="image.png" alt="project-item">
+            <p>description of project 1</p>
+
+        </div>
+        <div class="project-item">
+            <h3>Project 1</h3>
+            <img src="image.png" alt="project-item">
+            <p>description of project 1</p>
+
+        </div>
+        <div class="project-item">
+            <h3>Project 1</h3>
+            <img src="image.png" alt="project-item">
+            <p>description of project 1</p>
+
+        </div>
+        <div class="project-item">
+            <h3>Project 1</h3>
+            <img src="image.png" alt="project-item">
+            <p>description of project 1</p>
+
+        </div>
+        <div class="project-item">
+            <h3>Project 1</h3>
+            <img src="image.png" alt="project-item">
+            <p>description of project 1</p>
+
+        </div>
+
+        
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Oscar Johnson</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const texts = ["Software Development", "Software Development"];
+        let currentIndex = 0;
+        const textElement = document.getElementById("changing-text");
+
+        setInterval(() => {
+
+          textElement.style.opacity = "0";
+          setTimeout(() => {
+            currentIndex = (currentIndex + 1) % texts.length;
+            textElement.textContent = texts[currentIndex];
+
+            textElement.style.opacity = "1";
+          }, 300);
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>
